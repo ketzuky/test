@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
       this.auth.login(form.value).subscribe(resp => {
         this.router.navigate(['users']);
       },error =>{
-        this.showError('error');
+        this.showError(error.error.error);
       }) 
   }
 
