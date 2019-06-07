@@ -1,0 +1,24 @@
+<div class="full-bg">
+  <div class="center">
+    <div class="row custom">
+      <form [formGroup]="loginFom" (ngSubmit)="login(loginFom)">
+        <div class="col-12">
+          <div class="form-group">
+            <input type="email" class="form-control" formControlName="email">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-group">
+              <input type="password" class="form-control" formControlName="password">
+          </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group">
+              <button type="submit" class="btn btn-block btn-success">ENTRAR</button>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+<p-toast [baseZIndex]="1000"></p-toast>
